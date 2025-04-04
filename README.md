@@ -58,8 +58,23 @@ To interact with Trello's API, the first step is to obtain an **API Key** and **
 - I tested the program by creating a card on a specific list, adding labels, and adding a comment to the card. I verified the changes by checking the Trello board.
 - The card appeared on the board with the expected description, labels, and comment.
 
-### 7. Project Submission
-- Once the program was working as expected, I created a tarball (tar.gz) archive of the project directory for submission.
+### 7. Next Development Steps (Possibilities)
+- Enhanced User Input Handling – Improve CLI usability with better validation and interactive prompts.
+- Error Handling and Logging – Implement better exception handling and logging for debugging.
+- Configuration File for API Keys – Store API credentials securely in an environment file (.env) instead of hardcoding them.
+- Automated Tests – Add unit tests to validate API interactions and CLI functionality.
+- GUI Version – Convert this CLI tool into a web or desktop app for a better user experience.
+- Batch Card Creation – Allow users to create multiple cards at once from a CSV file.
+- Card Status Tracking – Fetch and display the current status of cards from the board.
+
+### 8. Time Taken
+- Understanding the Problem & Setting Up API Access: ~30 minutes
+- Fetching List IDs & Creating Cards: ~1 hour
+- Adding Comments & Testing: ~45 minutes
+- Writing Documentation & Cleanup: ~30 minutes
+- Total Time Spent: 2 hours 45 minutes
+
+
 
 
 
