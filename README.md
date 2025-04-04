@@ -19,7 +19,7 @@ To interact with Trello's API, the first step is to obtain an **API Key** and **
 
 ### 3. Fetching List IDs for the Board
 - Each Trello board consists of multiple lists (columns), and to create a card, I needed the List ID.
-- I fetched the List IDs using the Trello API endpoint: GET /boards/<board-id>/lists
+- I fetched the List IDs using the Trello API endpoint: GET /boards/ <board-id> /lists
 - The response contains the List IDs, which I used to determine the list where I wanted to create the card.
 
 ### 4. Card Creation
@@ -32,7 +32,7 @@ To interact with Trello's API, the first step is to obtain an **API Key** and **
 - Once I sent the request, the Trello API created the card and returned the card ID.
 
 ### 5. Adding Comments to the Card
-- After creating the card, I added a comment to it using the Trello API endpoint: POST /cards/<card-id>/actions/comments
+- After creating the card, I added a comment to it using the Trello API endpoint: POST /cards/ <card-id> /actions/comments
 - I provided the following parameter
 - text: The content of the comment.
 - This step successfully added a comment to the newly created card.
