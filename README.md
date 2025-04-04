@@ -17,14 +17,14 @@ To interact with Trello's API, the first step is to obtain an **API Key** and **
 - **Git Repository**: I created a local Git repository to track the project code and changes.
 - **Dependencies**: I installed Python's `requests` library for making HTTP requests to the Trello API.
 
-3. Fetching List IDs for the Board
+### 3. Fetching List IDs for the Board
 - Each Trello board consists of multiple lists (columns), and to create a card, I needed the List ID.
 
 - I fetched the List IDs using the Trello API endpoint:
 - GET /boards/<board-id>/lists
 - The response contains the List IDs, which I used to determine the list where I wanted to create the card.
 
-4. Card Creation
+### 4. Card Creation
 - To create a card on a specific list, I used the Trello API endpoint to create a card:
 - POST /cards
 - I provided the following parameters:
@@ -34,15 +34,15 @@ To interact with Trello's API, the first step is to obtain an **API Key** and **
 - labels: Optional, a comma-separated list of label names or IDs.
 - Once I sent the request, the Trello API created the card and returned the card ID.
 
-5. Adding Comments to the Card
+### 5. Adding Comments to the Card
 - After creating the card, I added a comment to it using the Trello API endpoint:
 - POST /cards/<card-id>/actions/comments
 - I provided the following parameter:
 - text: The content of the comment.
 - This step successfully added a comment to the newly created card.
-6. Testing the Program
+### 6. Testing the Program
 - I tested the program by creating a card on a specific list, adding labels, and adding a comment to the card. I verified the changes by checking the Trello board.
 - The card appeared on the board with the expected description, labels, and comment.
 
-7. Project Submission
+### 7. Project Submission
 - Once the program was working as expected, I created a tarball (tar.gz) archive of the project directory for submission.
